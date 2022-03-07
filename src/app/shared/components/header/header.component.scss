@@ -1,0 +1,9 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.app-header-left-container {
+  cursor: pointer;
+}

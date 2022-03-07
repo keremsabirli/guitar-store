@@ -1,0 +1,21 @@
+<mat-toolbar class="app-header" color="primary">
+  <div class="app-header-left-container" routerLink="/">
+    <span>Guitar Store</span>
+  </div>
+  <div class="app-header-right-container">
+    <button mat-icon-button (click)="onCartClicked()" cdkOverlayOrigin #cartTrigger="cdkOverlayOrigin">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+    <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="cartTrigger"
+      [cdkConnectedOverlayOpen]="isCartOverlayOpen">
+      <app-cart-overlay></app-cart-overlay>
+    </ng-template>
+    <button mat-icon-button (click)="onUserClicked()" cdkOverlayOrigin #userTrigger="cdkOverlayOrigin">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="userTrigger"
+      [cdkConnectedOverlayOpen]="isUserOverlayOpen">
+      <app-user-overlay></app-user-overlay>
+    </ng-template>
+  </div>
+</mat-toolbar>

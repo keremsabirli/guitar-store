@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.login-container {
+  display: grid;
+  place-items: center;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2em 4em;
+  mat-form-field {
+    display: block;
+  }
+}
+
+.login-card-title {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.submit-button {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}

@@ -1,0 +1,18 @@
+<mat-card class="cart-overlay-card">
+  <div class="cart-products-list">
+    <app-cart-item *ngFor="let cartProduct of cartProducts" [cartProduct]="cartProduct"></app-cart-item>
+  </div>
+  <div *ngIf="isCartEmpty" class="empty-cart">
+    <mat-icon>remove_shopping_cart</mat-icon>
+    <span>Your cart is empty</span>
+  </div>
+  <div *ngIf="!isCartEmpty" class="cart-overlay-total-price">
+    <span>
+      Total Price:
+    </span>
+    <span class="total-price-text">
+      {{cartPrice}} €
+    </span>
+
+  </div>
+</mat-card>

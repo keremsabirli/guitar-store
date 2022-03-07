@@ -1,0 +1,37 @@
+.cart-item-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-item-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-name {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+
+}
+
+.cart-item-delete-button {
+  margin-left: -1em;
+}
+
+.cart-item-amount-controls-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  user-select: none;
+}
+
+.cart-item-amount-control {
+  cursor: pointer;
+}
+
+.cart-item-price-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: #fb701d;
+}

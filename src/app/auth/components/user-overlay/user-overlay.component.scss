@@ -1,0 +1,17 @@
+.authenticated {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.unathenticated {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.user-badge {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5em;
+}

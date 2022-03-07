@@ -1,0 +1,15 @@
+<div class="user-overlay-container">
+  <mat-card>
+    <div *ngIf="isAuthenticated" class="authenticated">
+      <div class="user-badge">
+        <mat-icon>person</mat-icon>
+        <span>{{ user?.username }}</span>
+      </div>
+      <button mat-raised-button color="primary" (click)="onSignoutClicked()">Signout</button>
+    </div>
+    <div *ngIf="!isAuthenticated" class="unathenticated">
+      <button mat-raised-button color="primary" routerLink="/auth/login">Login</button>
+      <button mat-raised-button color="default" routerLink="/auth/signup">Sign Up</button>
+    </div>
+  </mat-card>
+</div>

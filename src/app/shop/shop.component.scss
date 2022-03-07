@@ -1,0 +1,11 @@
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+  app-product-card {
+    flex: 1 0 25%;
+    max-width: 400px;
+  }
+}

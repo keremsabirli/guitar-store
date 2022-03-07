@@ -1,0 +1,19 @@
+<div class="cart-item-container">
+  <img width="20%" [src]="cartProduct.product.image">
+  <div class="cart-item-body">
+    <span class="cart-item-name">{{cartProduct.product.name}}</span>
+    <div class="cart-item-price-container">
+      <span class="cart-item-price">{{cartProduct.product.price}} €</span>
+      <span>x{{cartProduct.amount}}</span>
+      <span> = {{totalPrice}} €</span>
+    </div>
+    <div class="cart-item-amount-controls-container">
+      <mat-icon class="cart-item-amount-control" (click)="onRemoveItemClicked()">remove</mat-icon>
+      <span>{{cartProduct.amount}}</span>
+      <mat-icon class="cart-item-amount-control" (click)="onAddItemClicked()">add</mat-icon>
+    </div>
+    <button mat-icon-button class="cart-item-delete-button" (click)="onDeleteClicked()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div>
